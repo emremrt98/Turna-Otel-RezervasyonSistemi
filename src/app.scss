@@ -12,3 +12,12 @@ $menu-color : #393E43;
     justify-content: center;
 }
 
+@mixin button {
+    cursor: pointer;
+    height: 56px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: $button-color;
+    font-weight: bold;
+}

@@ -23,12 +23,10 @@
 
         .leftSide__btn {
             width: 305px;
-            height: 56px;
+            @include button;
             background-color: $button-secondary-color;
             border: 1px solid $button-color;
-            border-radius: 6px;
             color: $button-color;
-            font-weight: bold;
             margin-top: 16px;
         }
     }

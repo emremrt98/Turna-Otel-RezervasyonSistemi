@@ -1,4 +1,42 @@
-.RightSide{
+@import '../../../app.scss';
+
+.RightSide {
     flex: 3;
-    
+
+    .rigtSide__head {
+        @include display;
+        justify-content: space-between;
+
+        .rigtSide__heading {
+            .rigtSide__header {
+                color: $head-color;
+                @include display;
+                justify-content: flex-start;
+                font-weight: bold;
+
+                span {
+                    margin-left: 20px;
+                }
+
+                .rigtSide__icon {
+                    color: #ffc833;
+                }
+            }
+
+            .rightSide__map {
+                color: $text-secondary-color;
+                @include display;
+                justify-content: flex-start;
+
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .rightSide__btn {
+            width: 203px;
+            @include button;
+        }
+    }
 }

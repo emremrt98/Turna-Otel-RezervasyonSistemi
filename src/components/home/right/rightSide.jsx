@@ -7,10 +7,10 @@ function RightSide() {
         <section className='RightSide'>
             <div className='rigtSide__head'>
                 <article className='rigtSide__heading'>
-                    <h4 className='rigtSide__header'>Rixos Downtown Hotel (9.0)<AiFillStar /><AiFillStar /><AiFillStar /></h4>
-                    <p className='rightSide__map'><FaMapMarker />Antalya, Merkez</p>
+                    <h4 className='rigtSide__header'>Rixos Downtown Hotel (9.0)<span><AiFillStar className='rigtSide__icon' /><AiFillStar className='rigtSide__icon' /><AiFillStar className='rigtSide__icon' /></span></h4>
+                    <p className='rightSide__map'><span><FaMapMarker /></span> Antalya, Merkez</p>
                 </article>
-                <button>Rezervasyon Yap</button>
+                <button className='rightSide__btn'>Rezervasyon Yap</button>
             </div>
         </section>
     )
