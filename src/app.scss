@@ -1,0 +1,14 @@
+$primary-color : #FF3200;
+$text-color : #343A46;
+$head-color : #343A40;
+$text-secondary-color : #868E96;
+$button-color : #0273DC;
+$button-secondary-color : #F0F7FD;
+$menu-color : #393E43;
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,57 @@
+@import "../../app.scss";
+
+.header {
+    height: 80px;
+    border-bottom: 1px solid #E5EBEF;
+
+    .navbar {
+        margin-left: 10px;
+
+        .nav__menu {
+            color: $menu-color;
+            margin-left: 10px;
+        }
+
+        .nav__menu2 {
+            margin-left: -10px;
+
+            .nav__img {
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .nav__img--icon {
+                border: 1px solid $menu-color;
+            }
+        }
+
+        .nav__menu--active {
+            color: $primary-color;
+            font-weight: 650;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 55px;
+                left: 0px;
+                height: 3px;
+                background-color: $primary-color;
+                width: 100%;
+
+            }
+        }
+
+        .nav__menu--btn {
+            @include display;
+            width: 74px;
+            height: 32px;
+            border: 1px solid $menu-color;
+            border-radius: 16px;
+        }
+    }
+
+
+}
