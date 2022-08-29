@@ -2,6 +2,7 @@ import React from 'react';
 import './right.scss';
 import { AiFillStar } from 'react-icons/ai';
 import { FaMapMarker } from 'react-icons/fa';
+import Carousel from './carousel/carousel';
 function RightSide() {
     return (
         <section className='RightSide'>
@@ -12,6 +13,10 @@ function RightSide() {
                 </article>
                 <button className='rightSide__btn'>Rezervasyon Yap</button>
             </div>
+            <article className='rightSide__slider'>
+                <Carousel />
+                <p className='rightSide__info'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, illo exercitationem doloribus mollitia dicta ipsa provident, numquam officiis harum quas expedita, incidunt esse voluptates sequi iure sapiente voluptatibus molestiae ad minima eos tempore molestias aspernatur dolor recusandae! </p>
+            </article>
         </section>
     )
 }

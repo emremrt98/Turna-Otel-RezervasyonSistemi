@@ -39,4 +39,14 @@
             @include button;
         }
     }
+
+    .rightSide__slider {
+        margin-top: 26px;
+
+        .rightSide__info {
+            font-size: 18px;
+            color: $text-color;
+            margin: 24px 0 56px 0;
+        }
+    }
 }
