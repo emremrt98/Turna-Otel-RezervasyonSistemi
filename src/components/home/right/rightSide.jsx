@@ -42,7 +42,7 @@ function RightSide() {
             <article className='rightSide__card'>
                 <HotelCard hotelRoomInfo={hotelRoomInfo[0]} />
                 <br />
-                <HotelCard hotelRoomInfo={hotelRoomInfo[1]}/>
+                <HotelCard hotelRoomInfo={hotelRoomInfo[1]} />
             </article>
         </section>
     )

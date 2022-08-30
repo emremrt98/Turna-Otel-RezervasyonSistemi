@@ -18,11 +18,11 @@ function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], 
                     <div className='hotelCard__properties'>
                         <div className='hotelCard__property'>
                             {
-                                property.map((data,index)=>(
-                                    <p key={index}><AiOutlineCheckCircle className='hotelCard__icons' />{property[index]}</p>
+                                property.map((data, index) => (
+                                    <p key={index}><AiOutlineCheckCircle className='hotelCard__icons' />{data}</p>
                                 ))
                             }
-                            
+
                         </div>
                         <div className="hotelCard__price">
                             <p>₺{price}</p>
