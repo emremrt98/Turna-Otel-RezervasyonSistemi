@@ -1,9 +1,9 @@
-import React from 'react';
+import Carousel from './carousel/carousel';
+import HotelCard from './hotelCard/hotelCard';
+import HotelProperties from './hotelProperties/hotelProperties';
 import './right.scss';
 import { AiFillStar } from 'react-icons/ai';
 import { FaMapMarker } from 'react-icons/fa';
-import Carousel from './carousel/carousel';
-import HotelCard from './hotelCard/hotelCard';
 import Room1 from '../../../assets/rooms/room1.jpg';
 import Room2 from '../../../assets/rooms/room2.jpg';
 function RightSide() {
@@ -44,7 +44,12 @@ function RightSide() {
                 <br />
                 <HotelCard hotelRoomInfo={hotelRoomInfo[1]} />
             </article>
-
+            <hr className='hr' />
+            <article className='rightSide__hotelProperties'>
+                <HotelProperties header="Otel Özellikleri" />
+                <hr className='hr' />
+                <HotelProperties header="Otel Koşulları" />
+            </article>
         </section>
     )
 }
