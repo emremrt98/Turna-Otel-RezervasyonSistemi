@@ -4,7 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assets/navbar/logo.png';
 import TrFlag from '../../assets/navbar/tr.png';
-import { BiLira } from 'react-icons/bi';
+import { TbCurrencyLira } from 'react-icons/tb';
+
 import './navbar.scss';
 function navbar() {
     return (
@@ -20,7 +21,7 @@ function navbar() {
                     </Nav>
                     <Nav className="ms-auto navbar">
                         <Nav.Link className='nav__menu2' href="#link"><img className='nav__img' src={TrFlag} alt="tr-flag" /></Nav.Link>
-                        <Nav.Link className='nav__menu2' href="#link"><BiLira className='nav__img nav__img--icon' /></Nav.Link>
+                        <Nav.Link className='nav__menu2' href="#link"><TbCurrencyLira className='nav__img nav__img--icon' /></Nav.Link>
                         <NavDropdown className='border-radius-5' title="Yardım" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Rezervasyon Kontrol</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Sıkça Sorulan Sorular</NavDropdown.Item>
