@@ -25,7 +25,7 @@ function RightSide() {
             opportunityPrice: "1.700",
         }
     ]
-    console.log(hotelRoomInfo[0].property);
+
     return (
         <section className='RightSide'>
             <div className='rigtSide__head'>
@@ -44,6 +44,7 @@ function RightSide() {
                 <br />
                 <HotelCard hotelRoomInfo={hotelRoomInfo[1]} />
             </article>
+
         </section>
     )
 }
