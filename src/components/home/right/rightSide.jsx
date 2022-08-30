@@ -20,6 +20,7 @@ function RightSide() {
             </figure>
             <article className='rightSide__card'>
                 <HotelCard />
+                <br />
                 <HotelCard />
             </article>
         </section>

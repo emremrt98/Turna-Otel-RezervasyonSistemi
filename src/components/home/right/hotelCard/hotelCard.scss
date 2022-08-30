@@ -2,8 +2,10 @@
 
 .hotelCard {
     display: flex;
+    
     flex: 3;
-
+    height: 342px;
+    border: 0.5px solid rgb(221, 221, 221);
     .hotelCard__img {
         flex: 1;
 
@@ -14,10 +16,8 @@
     }
 
     .hotelCard__generalInfo {
-        display: flex;
-        justify-content: space-between;
         flex: 2;
-
+        padding: 20px;
         .hotelCard__Info {
 
             .hotelCard__roomType {
@@ -26,7 +26,7 @@
             }
 
             .hotelCard__advantage {
-                width: 80%;
+                width: 50%;
 
                 span {
                     display: inline-block;
@@ -47,6 +47,90 @@
 
                     }
                 }
+            }
+
+            .hotelCard__properties {
+                margin-top: 14px;
+                @include display;
+                justify-content: space-between;
+
+                .hotelCard__property {
+                    p {
+                        color: $head-color;
+                        font-size: 14px;
+                        margin-top: -10px;
+                        @include display;
+                        justify-content: flex-start;
+
+                        .hotelCard__icons {
+                            font-size: 1rem;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .hotelCard__price {
+                    p:nth-child(1) {
+                        color: #ADB5BD;
+                        text-decoration: line-through;
+                        font-size: 18px;
+                        @include display;
+                        justify-content: end;
+                    }
+
+                    p:nth-child(2) {
+                        margin-top: -20px;
+                        color: $button-color;
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        hr{
+            color: rgb(177, 177, 177);
+
+        }
+
+        .hotelCard__reservation {
+            @include display;
+            justify-content: space-between;
+
+            .hotelCard__resInfo {
+                p:nth-child(1) {
+                    color: #495057;
+                    font-size: 14px;
+                }
+
+                p:nth-child(2) {
+                    @include display;
+                    color: $button-color;
+                    font-weight: bold;
+                    font-size: 13px;
+                    
+                    justify-content: flex-start;
+                    .hotelCard__icon{
+                        font-size: 1.1rem;
+                        margin-right: 10px
+                    }
+                }
+            }
+
+            .hotelCard__bookBtn {
+                
+                button {
+                    @include button;
+                    @include display;
+                    justify-content: space-evenly;
+                    width: 193px;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    .hotelCard__icon{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+
             }
         }
     }
