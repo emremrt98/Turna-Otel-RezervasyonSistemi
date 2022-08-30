@@ -10,7 +10,6 @@
         .hotelProperties__list {
             display: flex;
             flex-wrap: wrap;
-            flex: 1;
             justify-content: space-between;
             width: 80%;
             margin-left: -40px;
@@ -20,7 +19,8 @@
                     margin: 5px 10px;
                     list-style: none;
                     color: $head-color;
-                    .hotelProperties__icon{
+
+                    .hotelProperties__icon {
                         margin-right: 10px;
                     }
                 }

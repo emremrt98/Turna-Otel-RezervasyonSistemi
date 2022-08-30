@@ -1,6 +1,6 @@
 import './hotelProperties.scss';
 import { AiOutlineCheck } from 'react-icons/ai';
-function hotelProperties({header}) {
+function hotelProperties({ header }) {
     return (
         <section className='hotelProperties'>
             <article className='hotelProperties__info'>
