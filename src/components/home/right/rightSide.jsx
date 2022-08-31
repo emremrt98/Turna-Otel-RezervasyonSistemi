@@ -26,6 +26,21 @@ function RightSide() {
         }
     ]
 
+    const hotelPropertiesInfo = [
+        {
+            header: "Otel Özellikleri",
+            col1: ["Sauna", "Bar", "Spa Merkezi", "TV Salonu", "Havaalanı Servisi"],
+            col2: ["Market", "Masaj", "Kapalı Restoran", "Engelli Odaları"],
+            col3: ["Hamam", "Açık Restoran", "Otopark", "Araç Kiralama"]
+        },
+        {
+            header: "Otel Koşulları",
+            col1: ["Sauna", "Bar", "Spa Merkezi", "TV Salonu", "Havaalanı Servisi"],
+            col2: ["Market", "Masaj", "Kapalı Restoran", "Engelli Odaları"],
+            col3: ["Hamam", "Açık Restoran", "Otopark", "Araç Kiralama"]
+        }
+    ]
+
     return (
         <section className='RightSide'>
             <div className='rigtSide__head'>
@@ -46,9 +61,9 @@ function RightSide() {
             </article>
             <hr className='hr' />
             <article className='rightSide__hotelProperties'>
-                <HotelProperties header="Otel Özellikleri" />
+                <HotelProperties hotelPropertiesInfo={hotelPropertiesInfo[0]} />
                 <hr className='hr' />
-                <HotelProperties header="Otel Koşulları" />
+                <HotelProperties hotelPropertiesInfo={hotelPropertiesInfo[1]} />
             </article>
         </section>
     )
