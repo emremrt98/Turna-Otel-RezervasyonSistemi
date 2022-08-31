@@ -143,72 +143,59 @@
 
 @media only screen and (max-width : 768px) {
     .hotelCard {
-        display: flex;
-
-        flex: 3;
-        height: 342px;
+        height: 192px;
         border: 0.5px solid rgb(221, 221, 221);
 
         .hotelCard__img {
             flex: 1;
 
             img {
-                width: 300px;
-                height: 342px;
+                width: 150px;
+                height: 192px;
             }
         }
 
         .hotelCard__generalInfo {
-            flex: 2;
-            padding: 20px;
+
+            padding: 10px;
 
             .hotelCard__Info {
 
                 .hotelCard__roomType {
-                    font-size: 22px;
-                    color: $head-color;
+                    font-size: 12px;
+
                 }
 
                 .hotelCard__advantage {
-                    width: 50%;
+                    width: 75%;
 
                     span {
-                        display: inline-block;
-                        font-size: 12px;
-                        font-weight: bold;
-                        margin: 5px 0;
-                        padding: 6px;
+                        font-size: 8px;
+                        padding: 5px;
                         border-radius: 2px;
-                        background-color: $advantage-btn-color2;
-                        color: $advantage-btn-color;
 
                         &:nth-child(2) {
-                            margin-left: 10px;
 
                             .hotelCard__icon {
-                                font-size: 1rem;
+                                margin-left: 5px;
+                                font-size: .75rem;
                             }
-
                         }
                     }
                 }
 
                 .hotelCard__properties {
-                    margin-top: 14px;
-                    @include display;
-                    justify-content: space-between;
-
+                    margin-top: 5px;
+                    
                     .hotelCard__property {
                         p {
-                            color: $head-color;
-                            font-size: 14px;
+                           
+                            font-size: 10px;
                             margin-top: -10px;
-                            @include display;
-                            justify-content: flex-start;
 
                             .hotelCard__icons {
-                                font-size: 1rem;
-                                margin-right: 10px;
+                                font-size: .75rem;
+                                margin-right: 5px;
                             }
                         }
                     }
