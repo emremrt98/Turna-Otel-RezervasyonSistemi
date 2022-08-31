@@ -28,3 +28,31 @@
         }
     }
 }
+
+@media only screen and (max-width : 767px) {
+    .hotelProperties {
+        .hotelProperties__info {
+            .hotelProperties__header {
+                font-size: 16px;
+            }
+
+            .hotelProperties__list {
+                display: flex;
+                width: 110%;
+                div {
+                  
+                    li {
+                        margin: 5% 10px;
+                        font-size: 12px;
+                      
+                    
+
+                        .hotelProperties__icon {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
