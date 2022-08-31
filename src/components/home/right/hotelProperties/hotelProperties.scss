@@ -1,7 +1,9 @@
 @import "../../../../app.scss";
 
 .hotelProperties {
+  
     .hotelProperties__info {
+        margin-top: -10px;
         .hotelProperties__header {
             font-size: 22px;
             color: $text-color;
