@@ -62,6 +62,7 @@
 
 @media only screen and (max-width : 768px) {
     .RightSide {
+        margin-left: -120px;
         .rigtSide__head {
             justify-content: start;
             .rigtSide__heading {
@@ -93,7 +94,7 @@
 
         .rightSide__slider {
             margin-top: 16px;
-            width: 80%;
+            width: 100%;
             .rightSide__info {
                 font-size: 10px;
                 margin: 16px 0 26px 0;

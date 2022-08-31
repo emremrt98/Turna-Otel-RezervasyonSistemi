@@ -167,12 +167,12 @@
                 }
 
                 .hotelCard__advantage {
-                    width: 75%;
+                    width: 110%;
 
                     span {
+                        margin-top: 0px;
                         font-size: 8px;
                         padding: 5px;
-                        border-radius: 2px;
 
                         &:nth-child(2) {
 
@@ -185,13 +185,13 @@
                 }
 
                 .hotelCard__properties {
-                    margin-top: 5px;
-                    
+                    margin-top: 15px;
+                    justify-content: start;
+
                     .hotelCard__property {
                         p {
-                           
                             font-size: 10px;
-                            margin-top: -10px;
+                            margin-top: -15px;
 
                             .hotelCard__icons {
                                 font-size: .75rem;
@@ -201,50 +201,37 @@
                     }
 
                     .hotelCard__price {
+                        position: relative;
+                        left: 80px;
+
                         p:nth-child(1) {
-                            color: #ADB5BD;
-                            text-decoration: line-through;
-                            font-size: 18px;
-                            @include display;
-                            justify-content: end;
+                            font-size: 10px;
                         }
 
                         p:nth-child(2) {
                             margin-top: -20px;
-                            color: $button-color;
-                            font-size: 36px;
-                            font-weight: bold;
+                            font-size: 16px;
                         }
                     }
                 }
             }
 
-            hr {
-                color: rgb(177, 177, 177);
-
-            }
-
             .hotelCard__reservation {
                 @include display;
-                justify-content: space-between;
+                margin-top: -15px;
 
                 .hotelCard__resInfo {
                     p:nth-child(1) {
-                        color: #495057;
-                        font-size: 14px;
+                        font-size: 8px;
                     }
 
                     p:nth-child(2) {
-                        @include display;
-                        color: $button-color;
-                        font-weight: bold;
-                        font-size: 13px;
-
-                        justify-content: flex-start;
+                        font-size: 10px;
+                        margin-top: -15px;
 
                         .hotelCard__icon {
-                            font-size: 1.1rem;
-                            margin-right: 10px
+                            font-size: .75rem;
+                            margin-right: 5px
                         }
                     }
                 }
@@ -252,21 +239,25 @@
                 .hotelCard__bookBtn {
 
                     button {
-                        @include button;
-                        @include display;
-                        justify-content: space-evenly;
-                        width: 193px;
-                        font-size: 18px;
-                        margin-bottom: 20px;
+                        height: 25px;
+                        width: 100px;
+                        font-size: 12px;
+                        margin-bottom: 0px;
 
                         .hotelCard__icon {
-                            font-size: 1.2rem;
-                            font-weight: bold;
+                            font-size: 14px;
+
                         }
                     }
 
                 }
             }
+
+            hr {
+                display: none;
+
+            }
         }
+
     }
 }
