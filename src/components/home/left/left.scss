@@ -3,32 +3,96 @@
 .LeftSide {
     flex: 1;
 
-    .leftSide__header {
-        font-weight: 700;
-        font-size: 16px;
-        color: $text-color;
+    .leftSide__mapIcon {
+        @include button;
+        display: none;
+
     }
 
-    .leftSide__article {
-        .leftSide__address {
-            width: 80%;
-            font-size: 14px;
-            color: $text-secondary-color;
+
+    .leftSide__transportation {
+        .leftSide__header {
+            font-weight: 700;
+            font-size: 16px;
+            color: $text-color;
         }
 
-        .leftSide__map {
-            width: 305px;
-            height: 190px;
+        .leftSide__article {
+            .leftSide__address {
+                width: 80%;
+                font-size: 14px;
+                color: $text-secondary-color;
+            }
+
+            .leftSide__map {
+                width: 305px;
+                height: 190px;
+            }
+
+            .leftSide__btn {
+                width: 305px;
+                @include button;
+                background-color: $button-secondary-color;
+                border: 1px solid $button-color;
+                color: $button-color;
+                margin-top: 16px;
+            }
         }
 
-        .leftSide__btn {
-            width: 305px;
-            @include button;
-            background-color: $button-secondary-color;
-            border: 1px solid $button-color;
-            color: $button-color;
-            margin-top: 16px;
-        }
     }
 
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 768px) {
+    .LeftSide {
+        position: relative;
+
+        .leftSide__mapIcon {
+            display: none;
+            width: 50px;
+            position: absolute;
+            top: -40px;
+            height: 50px;
+            border-radius: 6px;
+            -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
+        }
+
+
+        .leftSide__transportation {
+            display: none;
+
+            .leftSide__header {
+                font-weight: 700;
+                font-size: 16px;
+                color: $text-color;
+            }
+
+            .leftSide__article {
+                .leftSide__address {
+                    width: 80%;
+                    font-size: 14px;
+                    color: $text-secondary-color;
+                }
+
+                .leftSide__map {
+                    width: 305px;
+                    height: 190px;
+                }
+
+                .leftSide__btn {
+                    width: 305px;
+                    @include button;
+                    background-color: $button-secondary-color;
+                    border: 1px solid $button-color;
+                    color: $button-color;
+                    margin-top: 16px;
+                }
+            }
+
+        }
+
+    }
 }

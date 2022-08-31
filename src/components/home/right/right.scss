@@ -55,7 +55,58 @@
         color: rgb(177, 177, 177);
     }
 
-    .rightSide__hotelProperties{
+    .rightSide__hotelProperties {
         margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .RightSide {
+        .rigtSide__head {
+            justify-content: start;
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 14px;
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+                .rightSide__map {
+                    font-size: 8px;
+
+                    span {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .rightSide__btn {
+                @include button;
+                width: 103px;
+                height: 36px;
+                font-size: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        .rightSide__slider {
+            margin-top: 16px;
+            width: 57%;
+            .rightSide__info {
+                font-size: 10px;
+                margin: 16px 0 26px 0;
+            }
+        }
+
+        .hr {
+            margin: 40px 0;
+       
+        }
+
+        .rightSide__hotelProperties {
+            margin-bottom: 60px;
+        }
     }
 }

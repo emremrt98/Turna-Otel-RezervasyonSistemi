@@ -5,11 +5,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assets/navbar/logo.png';
 import TrFlag from '../../assets/navbar/tr.png';
 import { TbCurrencyLira } from 'react-icons/tb';
-
 import './navbar.scss';
+
 function navbar() {
+
     return (
-        <Navbar className=' header' expand="lg">
+        <Navbar className="header" expand="lg">
             <Container>
                 <Navbar.Brand className='d-flex' href="#home"><img src={Logo} alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
