@@ -141,6 +141,50 @@
     }
 }
 
+@media only screen and (max-width : 992px) {
+    .hotelCard {
+
+        .hotelCard__generalInfo {
+
+            padding: 4%;
+
+            .hotelCard__Info {
+
+                .hotelCard__roomType {
+                    font-size: 22px;
+
+                }
+
+                .hotelCard__advantage {
+                    width: 100%;
+
+                    span {
+                        font-size: 12px;
+
+                    }
+                }
+
+                .hotelCard__properties {
+                    margin-top: 4%;
+
+                    .hotelCard__property {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+            }
+
+            .hotelCard__reservation {
+
+                margin-top: -10%;
+
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 767px) {
     .hotelCard {
         height: 192px;
@@ -263,7 +307,7 @@
 
 @media only screen and (max-width : 389px) {
     .hotelCard {
-       
+
         .hotelCard__generalInfo {
 
             padding: 1.25%;
@@ -286,6 +330,7 @@
 
                 .hotelCard__properties {
                     margin-top: 6%;
+
                     .hotelCard__property {
                         p {
                             font-size: 9px;
@@ -294,7 +339,7 @@
                     }
 
                     .hotelCard__price {
-                       
+
                         left: 42%;
 
                     }
@@ -302,7 +347,7 @@
             }
 
             .hotelCard__reservation {
-            
+
                 margin-top: -6%;
 
             }

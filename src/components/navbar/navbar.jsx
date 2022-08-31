@@ -7,6 +7,7 @@ import TrFlag from '../../assets/navbar/tr.png';
 import { TbCurrencyLira } from 'react-icons/tb';
 import './navbar.scss';
 
+
 function navbar() {
 
     return (

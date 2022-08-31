@@ -31,6 +31,25 @@
     }
 }
 
+@media only screen and (max-width : 992px) {
+    .hotelProperties {
+  
+        .hotelProperties__info {
+           
+            .hotelProperties__list {
+                width: 100%;
+    
+                div {
+                    li {
+                        margin: 10px 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 767px) {
     .hotelProperties {
         .hotelProperties__info {
