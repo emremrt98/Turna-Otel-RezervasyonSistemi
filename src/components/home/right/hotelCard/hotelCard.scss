@@ -260,3 +260,54 @@
 
     }
 }
+
+@media only screen and (max-width : 389px) {
+    .hotelCard {
+       
+        .hotelCard__generalInfo {
+
+            padding: 1.25%;
+
+            .hotelCard__Info {
+
+                .hotelCard__roomType {
+                    font-size: 12px;
+
+                }
+
+                .hotelCard__advantage {
+                    width: 100%;
+
+                    span {
+                        font-size: 7px;
+                        padding: 2%;
+                    }
+                }
+
+                .hotelCard__properties {
+                    margin-top: 6%;
+                    .hotelCard__property {
+                        p {
+                            font-size: 9px;
+
+                        }
+                    }
+
+                    .hotelCard__price {
+                       
+                        left: 42%;
+
+                    }
+                }
+            }
+
+            .hotelCard__reservation {
+            
+                margin-top: -6%;
+
+            }
+
+        }
+
+    }
+}
