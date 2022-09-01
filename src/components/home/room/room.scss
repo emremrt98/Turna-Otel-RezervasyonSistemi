@@ -8,13 +8,16 @@
     position: absolute;
     top: 0;
     z-index: 100;
+
     .room__general {
         @include display;
+
         .room__gnr {
             width: 50%;
             background-color: #fff;
             position: relative;
-            .room__exit{
+
+            .room__exit {
                 position: absolute;
                 font-size: 3rem;
                 color: #fff;
@@ -22,8 +25,9 @@
                 right: 40px;
                 top: 25px;
                 cursor: pointer;
-                
+
             }
+
             .room__information {
                 padding: 4%;
 
@@ -105,3 +109,86 @@
         }
     }
 }
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 768px) {
+    .room {
+        padding: 30% 0;
+        .room__general {
+
+            .room__gnr {
+                width: 90%;
+                .room__exit {
+                    font-size: 2rem;
+                    right: 1%;
+                    top: 1%;
+                }
+
+                .room__information {
+                    padding: 5%;
+
+                    .room__header {
+                        font-size: 22px;
+                    }
+
+                    .room__header--info {
+                        font-size: 12px;
+                    }
+
+                    .room__advantage {
+                        font-size: 9px;
+
+                        span {
+                            margin-right: 5px;
+                        }
+                        span:nth-child(3){
+                            .room__icon{
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                    }
+
+                    .room__property {
+                        font-size: 11px;
+                        width: 96%;
+                        div{
+                            p{
+                                margin-top: -8px;
+                            }
+                        }
+                     
+                    }
+
+                    .room__book {
+
+                        .room__price {
+                            p:nth-child(1) {
+                                font-size: 24px;
+                            }
+                            p:nth-child(2) {
+                                font-size: 10px;
+                                margin-top: -15px;
+                            }
+                        }
+
+                        .room__bookBtn {
+                            button {
+                                width: 120px;
+                                font-size: 14px;
+                                height: 36px;
+                            }
+
+                            .room__btnIcon {
+                                font-size: 18px;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
