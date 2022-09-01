@@ -6,6 +6,9 @@ import { AiFillStar } from 'react-icons/ai';
 import { FaMapMarker } from 'react-icons/fa';
 import Room1 from '../../../assets/rooms/room1.jpg';
 import Room2 from '../../../assets/rooms/room2.jpg';
+import Hotel1 from '../../../assets/hotels/hotel1.jpg';
+import Hotel2 from '../../../assets/hotels/hotel2.jpg';
+import Hotel3 from '../../../assets/hotels/hotel3.jpg';
 function RightSide() {
     const hotelRoomInfo = [
         {
@@ -51,7 +54,7 @@ function RightSide() {
                 <button className='rightSide__btn'>Rezervasyon Yap</button>
             </div>
             <figure className='rightSide__slider'>
-                <Carousel />
+                <Carousel img1={Hotel1} img2={Hotel2} img3={Hotel3} />
                 <p className='rightSide__info'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, illo exercitationem doloribus mollitia dicta ipsa provident, numquam officiis harum quas expedita, incidunt esse voluptates sequi iure sapiente voluptatibus molestiae ad minima eos tempore molestias aspernatur dolor recusandae! </p>
             </figure>
             <article className='rightSide__card'>

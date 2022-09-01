@@ -1,0 +1,105 @@
+@import '../../../app.scss';
+
+.room {
+    width: 100%;
+    height: 225vh;
+    padding: 14% 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    .room__general {
+        @include display;
+        .room__gnr {
+            width: 50%;
+            background-color: #fff;
+            position: relative;
+            .room__exit{
+                position: absolute;
+                font-size: 3rem;
+                color: #fff;
+                z-index: 1000;
+                right: 40px;
+                top: 25px;
+            }
+            .room__information {
+                padding: 4%;
+
+                .room__header {
+                    font-size: 24px;
+                    color: $text-color;
+                }
+
+                .room__header--info {
+                    font-size: 16px;
+
+                }
+
+                .room__advantage {
+                    @include display;
+                    font-size: 16px;
+                    justify-content: start;
+                    font-weight: 600;
+                    color: $advantage-btn-color;
+
+                    span {
+                        background-color: $advantage-btn-color2;
+                        margin-right: 10px;
+                        padding: 1% 2%;
+                    }
+
+                    span:nth-child(3) {
+                        @include display;
+
+                        .room__icon {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .room__property {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    width: 90%;
+                    margin-top: 20px;
+                }
+
+                .room__book {
+                    @include display;
+                    justify-content: space-between;
+
+                    .room__price {
+                        p:nth-child(1) {
+                            color: $button-color;
+                            font-size: 36px;
+                            font-weight: bold;
+                        }
+
+                        p:nth-child(2) {
+                            color: $text-secondary-color;
+                            font-size: 14px;
+                            margin-top: -20px;
+                        }
+                    }
+
+                    .room__bookBtn {
+                        button {
+                            @include button;
+                            width: 193px;
+                            font-size: 18px;
+                            @include display;
+                            justify-content: space-evenly;
+                        }
+
+                        .room__btnIcon {
+                            font-size: 22px;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
