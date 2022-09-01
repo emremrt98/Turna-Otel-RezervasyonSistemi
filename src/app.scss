@@ -24,3 +24,9 @@ $advantage-btn-color2 : #E8F7E9;
     font-weight: bold;
 }
 
+.App {
+    .loader {
+        @include display();
+        height: 80vh;
+    }
+}

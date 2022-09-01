@@ -16,12 +16,11 @@ function App() {
     }, 2000);
   }, []);
 
-
   return (
     <div className="App ">
       {
         loader ?
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "80vh" }}><ClipLoader color='#FF3200' loading={loader} size={100} /></div>
+          <div className='loader'><ClipLoader color='#FF3200' loading={loader} size={100} /></div>
           :
           <div>
             <Navbar />
