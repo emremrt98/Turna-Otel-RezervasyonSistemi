@@ -2,7 +2,6 @@
 
 .hotelCard {
     display: flex;
-
     flex: 3;
     height: 342px;
     border: 0.5px solid rgb(221, 221, 221);
@@ -77,7 +76,7 @@
                         text-decoration: line-through;
                         font-size: 18px;
                         @include display;
-                        justify-content: end;
+                        justify-content: flex-end;
                     }
 
                     p:nth-child(2) {
@@ -110,7 +109,6 @@
                     color: $button-color;
                     font-weight: bold;
                     font-size: 13px;
-
                     justify-content: flex-start;
 
                     .hotelCard__icon {
@@ -230,7 +228,7 @@
 
                 .hotelCard__properties {
                     margin-top: 8%;
-                    justify-content: start;
+                    justify-content: flex-start;
 
                     .hotelCard__property {
                         p {

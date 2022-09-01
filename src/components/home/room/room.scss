@@ -110,14 +110,91 @@
     }
 }
 
-// Responsive Design for Mobile
-@media only screen and (max-width : 768px) {
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 992px) {
     .room {
         padding: 30% 0;
+
         .room__general {
 
             .room__gnr {
                 width: 90%;
+
+                .room__exit {
+                    font-size: 2.5rem;
+                    right: 1%;
+                    top: 1%;
+                }
+
+                .room__information {
+                    padding: 5%;
+
+                    .room__header {
+                        font-size: 28px;
+                    }
+
+                    .room__header--info {
+                        font-size: 16px;
+                    }
+
+                    .room__advantage {
+                        font-size: 12px;
+
+                        span {
+                            margin-right: 5px;
+                        }
+
+                        span:nth-child(3) {
+                            .room__icon {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                    }
+
+                    .room__property {
+                        font-size: 14px;
+                        width: 96%;
+
+                        div {
+                            p {
+                                margin-top: -8px;
+                            }
+                        }
+
+                    }
+
+                    .room__book {
+
+                        .room__price {
+                            p:nth-child(1) {
+                                font-size: 32px;
+                            }
+
+                            p:nth-child(2) {
+                                font-size: 14px;
+                                margin-top: -15px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 767px) {
+    .room {
+        padding: 30% 0;
+
+        .room__general {
+
+            .room__gnr {
+                width: 90%;
+
                 .room__exit {
                     font-size: 2rem;
                     right: 1%;
@@ -141,8 +218,9 @@
                         span {
                             margin-right: 5px;
                         }
-                        span:nth-child(3){
-                            .room__icon{
+
+                        span:nth-child(3) {
+                            .room__icon {
                                 font-size: 1.2rem;
                             }
                         }
@@ -152,12 +230,13 @@
                     .room__property {
                         font-size: 11px;
                         width: 96%;
-                        div{
-                            p{
+
+                        div {
+                            p {
                                 margin-top: -8px;
                             }
                         }
-                     
+
                     }
 
                     .room__book {
@@ -166,6 +245,7 @@
                             p:nth-child(1) {
                                 font-size: 24px;
                             }
+
                             p:nth-child(2) {
                                 font-size: 10px;
                                 margin-top: -15px;
@@ -191,4 +271,3 @@
         }
     }
 }
-
