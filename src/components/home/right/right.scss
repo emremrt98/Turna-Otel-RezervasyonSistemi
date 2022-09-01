@@ -154,6 +154,33 @@
     }
 }
 
+@media only screen and (max-width : 414px) {
+    .RightSide {
+
+
+        .rigtSide__head {
+
+
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 14px;
+
+                    span {
+                        margin-left: 12px;
+                    }
+                }
+
+                .rightSide__map {
+                    font-size: 10px;
+
+
+                }
+            }
+        }
+    }
+}
+
 // Responsive Design for Small Mobile
 @media only screen and (max-width : 389px) {
     .RightSide {

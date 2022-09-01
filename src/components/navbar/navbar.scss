@@ -1,9 +1,10 @@
 @import "../../app.scss";
 
 .header {
-   
+
     border-bottom: 1px solid #E5EBEF;
     z-index: 100;
+
     .navbar {
         margin-left: 10px;
 
@@ -58,8 +59,67 @@
 
 }
 
-// RESPONSIVE DESIGN
+// RESPONSIVE DESIGN for Mobile
 
 @media only screen and (max-width : 768px) {
-    
+    .header {
+        .navbar--modf {
+            margin-top: -20px;
+        }
+
+        .navbar {
+            margin-left: 0px;
+
+            .nav__menu {
+                margin-left: 0px;
+            }
+
+            .nav__menu2 {
+                margin-left: 0px;
+
+            }
+
+            .nav__menu--active {
+
+
+                &::after {
+                    width: 00%;
+
+                }
+            }
+
+        }
+    }
+}
+
+// RESPONSIVE DESIGN for Tablet
+@media only screen and (max-width : 992px) {
+    .header {
+        .navbar--modf {
+            margin-top: -20px;
+        }
+
+        .navbar {
+            margin-left: 0px;
+
+            .nav__menu {
+                margin-left: 0px;
+            }
+
+            .nav__menu2 {
+                margin-left: 0px;
+
+            }
+
+            .nav__menu--active {
+
+
+                &::after {
+                    width: 00%;
+
+                }
+            }
+
+        }
+    }
 }

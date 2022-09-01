@@ -21,7 +21,7 @@ function navbar() {
                         <Nav.Link className='nav__menu' href="#link">Otobüs Bileti</Nav.Link>
                         <Nav.Link className='nav__menu nav__menu--active' href="#link">Otel Rezervasyon</Nav.Link>
                     </Nav>
-                    <Nav className="ms-auto navbar">
+                    <Nav className="ms-auto navbar navbar--modf">
                         <Nav.Link className='nav__menu2' href="#link"><img className='nav__img' src={TrFlag} alt="tr-flag" /></Nav.Link>
                         <Nav.Link className='nav__menu2' href="#link"><TbCurrencyLira className='nav__img nav__img--icon' /></Nav.Link>
                         <NavDropdown className='border-radius-5' title="Yardım" id="basic-nav-dropdown">
