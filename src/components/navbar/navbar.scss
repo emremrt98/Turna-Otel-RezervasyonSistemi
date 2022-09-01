@@ -102,15 +102,13 @@
         .navbar {
             margin-left: 0px;
 
-            .nav__menu {
+            .nav__menu, .nav__menu2 {
+                margin-top: 10px;
+                font-size: 1.2rem;
                 margin-left: 0px;
             }
 
-            .nav__menu2 {
-                margin-left: 0px;
-
-            }
-
+           
             .nav__menu--active {
 
 
