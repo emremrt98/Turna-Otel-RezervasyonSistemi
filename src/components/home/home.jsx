@@ -2,11 +2,11 @@ import React from 'react'
 import LeftSide from './left/leftSide';
 import RightSide from './right/rightSide';
 import './home.scss'
-function Home() {
+function Home({ show, setShow }) {
     return (
         <div className='Home container'>
             <LeftSide />
-            <RightSide />
+            <RightSide show={show} setShow={setShow} />
         </div>
     )
 }

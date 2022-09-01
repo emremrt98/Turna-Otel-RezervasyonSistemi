@@ -5,14 +5,14 @@ import Room3 from '../../../assets/rooms/small room/Rectangle3.png';
 import './room.scss';
 import { AiOutlineInfoCircle, AiOutlineCheck, AiFillCloseCircle } from 'react-icons/ai';
 import { FaArrowRight } from 'react-icons/fa'
-function room() {
+function room({ show, setShow }) {
     return (
         <section className='room container-fluid'>
 
             <article className='room__general'>
 
                 <div className='room__gnr'>
-                    <AiFillCloseCircle className='room__exit'/>
+                    <AiFillCloseCircle onClick={() => setShow(!show)} className='room__exit' />
                     < Carousel img1={Room1} img2={Room2} img3={Room3} />
                     <div className='room__information'>
                         <h4 className='room__header'>Standart Oda</h4>

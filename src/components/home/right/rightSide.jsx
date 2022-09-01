@@ -9,7 +9,7 @@ import Room2 from '../../../assets/rooms/room2.jpg';
 import Hotel1 from '../../../assets/hotels/hotel1.jpg';
 import Hotel2 from '../../../assets/hotels/hotel2.jpg';
 import Hotel3 from '../../../assets/hotels/hotel3.jpg';
-function RightSide() {
+function RightSide({ show, setShow }) {
     const hotelRoomInfo = [
         {
             name: "Standart Oda",
@@ -58,9 +58,9 @@ function RightSide() {
                 <p className='rightSide__info'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, illo exercitationem doloribus mollitia dicta ipsa provident, numquam officiis harum quas expedita, incidunt esse voluptates sequi iure sapiente voluptatibus molestiae ad minima eos tempore molestias aspernatur dolor recusandae! </p>
             </figure>
             <article className='rightSide__card'>
-                <HotelCard hotelRoomInfo={hotelRoomInfo[0]} />
+                <HotelCard hotelRoomInfo={hotelRoomInfo[0]} show={show} setShow={setShow} />
                 <br />
-                <HotelCard hotelRoomInfo={hotelRoomInfo[1]} />
+                <HotelCard hotelRoomInfo={hotelRoomInfo[1]} show={show} setShow={setShow} />
             </article>
             <hr className='hr' />
             <article className='rightSide__hotelProperties'>

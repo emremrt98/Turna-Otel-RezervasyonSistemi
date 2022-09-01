@@ -2,7 +2,7 @@ import './hotelCard.scss';
 import { AiOutlineInfoCircle, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FaArrowRight } from 'react-icons/fa';
 
-function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], property, price, opportunityPrice } }) {
+function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], property, price, opportunityPrice }, show, setShow }) {
 
     return (
         <section className='hotelCard'>
@@ -36,7 +36,7 @@ function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], 
                         <p>İki gece için toplam tutardır.</p>
                         <p><AiOutlineInfoCircle className='hotelCard__icon' />DETAYLAR</p>
                     </div>
-                    <div className='hotelCard__bookBtn'><button type='button'>Odayı Ayır<FaArrowRight className='hotelCard__icon' /></button></div>
+                    <div className='hotelCard__bookBtn'><button onClick={() => setShow(!show)} type='button'>Odayı Ayır<FaArrowRight className='hotelCard__icon' /></button></div>
                 </div>
             </article>
         </section>
