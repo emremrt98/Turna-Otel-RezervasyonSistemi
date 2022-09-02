@@ -50,7 +50,7 @@ function room({ show, setShow }) {
                         <hr />
                         <article className='room__book'>
                             <div className='room__price'>
-                                <p>₺1.500</p>
+                                <p>₺1.200</p>
                                 <p>2 gece için toplam tutardır.</p>
                             </div>
                             <div className='room__bookBtn'>
