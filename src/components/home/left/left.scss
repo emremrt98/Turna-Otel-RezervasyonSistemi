@@ -65,7 +65,7 @@
             left: -800px;
             transition: all .3s;
             background-color: #fff;
-            width: 122%;
+            width: 98%;
             height: 54vh;
 
             .leftSide__header {
@@ -91,7 +91,7 @@
         }
 
         .leftSide__transportation {
-            width: 144%;
+            width: 112%;
             height: 70vh;
         }
     }
@@ -110,7 +110,7 @@
 
         .leftSide__transportation {
             width: 190%;
-            height: 47vh;
+            height: 48vh;
 
             .leftSide__header {
                 font-size: 24px;
@@ -154,6 +154,7 @@
         .leftSide__transportation {
             width: 190%;
             height: 40vh;
+
         }
 
         .leftSide__transportation2 {
@@ -220,8 +221,8 @@
 @media only screen and (max-width : 361px) {
     .LeftSide {
         .leftSide__transportation {
-            width: 274%;
-            height: 54vh;
+            width: 278%;
+            height: 56vh;
         }
 
         .leftSide__transportation2 {
