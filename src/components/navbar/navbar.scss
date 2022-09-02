@@ -77,7 +77,7 @@
             
             .nav__menu,
             .nav__menu2 {
-                margin-top: 10px;
+                margin-top: 12px;
                 font-size: 1.2rem;
                 margin-left: 10px;
             }
@@ -93,7 +93,7 @@
 
 // RESPONSIVE DESIGN for Mobile
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
     .header {
         .navbar--modf {
             margin-top: -20px;

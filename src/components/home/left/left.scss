@@ -41,6 +41,9 @@
 
 }
 
+
+
+
 // Responsive Design for Tablet
 @media only screen and (max-width : 992px) and (min-width : 768px) {
     .LeftSide {
@@ -68,7 +71,7 @@
             transition: all .3s;
             background-color: #fff;
             width: 190%;
-            height: 46vh;
+            height: 47vh;
 
             .leftSide__header {
                 padding: 20px 0 0 0;
@@ -79,7 +82,7 @@
                 .leftSide__address {
                     width: 66%;
                     font-size: 16px;
-                    
+
                 }
 
                 .leftSide__map {
@@ -98,10 +101,26 @@
             }
 
         }
-        .leftSide__transportation2{
+
+        .leftSide__transportation2 {
             left: -5px;
         }
 
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 913px) and (min-width : 912px) {
+    .LeftSide {
+
+        .leftSide__transportation {
+            width: 190%;
+            height: 40vh;
+        }
+
+        .leftSide__transportation2 {
+            left: -5px;
+        }
     }
 }
 
