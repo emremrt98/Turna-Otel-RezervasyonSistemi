@@ -6,15 +6,9 @@ import { useEffect } from 'react';
 
 function LeftSide() {
     const [state, setState] = useState(false);
-    useEffect(() => {
-        console.log(state);
-
-
-    }, [state])
 
     return (
         <section className='LeftSide'>
-
             <button onBlur={() => setState(!state)} onClick={() => setState(!state)} className='leftSide__mapIcon'><FaMapMarkerAlt /></button>
             <article className={state ? 'leftSide__transportation leftSide__transportation2' : 'leftSide__transportation'}>
                 <h6 className='leftSide__header'>Otele Ulaşım</h6>
@@ -24,10 +18,7 @@ function LeftSide() {
                     <button className='leftSide__btn' type='button'>Haritada Göster</button>
                 </article>
             </article>
-
         </section >
-
-
     )
 }
 

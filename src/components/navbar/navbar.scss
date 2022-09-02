@@ -74,7 +74,7 @@
 
         .navbar {
             margin-left: 0px;
-
+            
             .nav__menu,
             .nav__menu2 {
                 margin-top: 10px;
@@ -104,11 +104,12 @@
 
             .nav__menu {
                 margin-left: 0px;
+                margin-top: -2px;
             }
 
             .nav__menu2 {
                 margin-left: 10px;
-
+                margin-top: -2px;
             }
 
             .nav__menu--active {
