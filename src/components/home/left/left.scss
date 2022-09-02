@@ -41,8 +41,7 @@
 
 }
 
-// Responsive Design for Tablet
-@media only screen and (max-width : 992px) and (min-width : 768px) {
+@media only screen and (max-width : 1280px) {
     .LeftSide {
         position: relative;
         z-index: 100;
@@ -50,9 +49,9 @@
         .leftSide__mapIcon {
             z-index: 1000;
             display: block;
-            width: 50px;
+            width: 60px;
             position: absolute;
-            top: -40px;
+            top: -46px;
             height: 50px;
             border-radius: 6px;
             -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
@@ -60,25 +59,67 @@
             box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
         }
 
-
         .leftSide__transportation {
             display: block;
             position: absolute;
             left: -800px;
             transition: all .3s;
             background-color: #fff;
+            width: 122%;
+            height: 54vh;
+
+            .leftSide__header {
+                padding: 20px 0 0 0;
+                font-size: 18px;
+            }
+        }
+
+        .leftSide__transportation2 {
+            left: -5px;
+
+        }
+
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 1279px) and (min-width : 1024px) {
+    .LeftSide {
+        .leftSide__mapIcon {
+            width: 50px;
+            height: 40px;
+        }
+
+        .leftSide__transportation {
+            width: 144%;
+            height: 70vh;
+        }
+    }
+}
+
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 992px) and (min-width : 768px) {
+    .LeftSide {
+
+        .leftSide__mapIcon {
+            width: 50px;
+            height: 50px;
+        }
+
+
+        .leftSide__transportation {
             width: 190%;
             height: 47vh;
 
             .leftSide__header {
-                padding: 20px 0 0 0;
                 font-size: 24px;
             }
 
             .leftSide__article {
                 .leftSide__address {
-                    width: 66%;
-                    font-size: 16px;
+                    width: 92%;
+                    font-size: 18px;
 
                 }
 
@@ -124,42 +165,16 @@
 // Responsive Design for Mobile
 @media only screen and (max-width : 767px) {
     .LeftSide {
-        position: relative;
-        z-index: 100;
-
         .leftSide__mapIcon {
-            z-index: 1000;
-            display: block;
             width: 40px;
-            position: absolute;
-            top: -46px;
             height: 40px;
-            border-radius: 6px;
-            -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
         }
 
         .leftSide__transportation {
-            display: block;
-            position: absolute;
-            left: -800px;
-            transition: all .3s;
-            background-color: #fff;
             width: 258%;
             height: 48vh;
 
-            .leftSide__header {
-                padding: 20px 0 0 0;
-                font-size: 18px;
-            }
         }
-
-        .leftSide__transportation2 {
-            left: -5px;
-
-        }
-
     }
 }
 
@@ -177,28 +192,23 @@
 // Responsive Design for Mobile
 @media only screen and (min-width : 412px) and (max-width : 414px) {
     .LeftSide {
-
         .leftSide__transportation {
             width: 246%;
             height: 45vh;
         }
-
         .leftSide__transportation2 {
             left: -5px;
         }
-
     }
 }
 
 // Responsive Design for Mobile
 @media only screen and (max-width : 389px) {
     .LeftSide {
-
         .leftSide__transportation {
             width: 270%;
             height: 60vh;
         }
-
         .leftSide__transportation2 {
             left: -5px;
         }
@@ -209,7 +219,6 @@
 // Responsive Design for Mobile
 @media only screen and (max-width : 361px) {
     .LeftSide {
-
         .leftSide__transportation {
             width: 274%;
             height: 54vh;
