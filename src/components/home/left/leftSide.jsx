@@ -2,7 +2,7 @@ import React from 'react'
 import "./left.scss"
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { useState } from 'react';
-import { useEffect } from 'react';
+
 
 function LeftSide() {
     const [state, setState] = useState(false);

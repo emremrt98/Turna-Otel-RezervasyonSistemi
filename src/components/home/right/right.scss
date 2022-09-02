@@ -70,7 +70,7 @@
             .rigtSide__heading {
                 .rigtSide__header {
                     font-size: 1.6em;
-
+                    padding-top: 14px;
                 }
 
                 .rightSide__map {
@@ -184,12 +184,13 @@
 // Responsive Design for Small Mobile
 @media only screen and (max-width : 389px) {
     .RightSide {
-
+        padding-left: 10px;
         .rigtSide__head {
 
             .rigtSide__heading {
 
                 .rigtSide__header {
+                    
                     font-size: 16px;
                     display: block;
 
