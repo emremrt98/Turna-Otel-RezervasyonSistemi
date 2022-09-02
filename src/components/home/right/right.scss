@@ -185,12 +185,13 @@
 @media only screen and (max-width : 389px) {
     .RightSide {
         padding-left: 10px;
+
         .rigtSide__head {
 
             .rigtSide__heading {
 
                 .rigtSide__header {
-                    
+
                     font-size: 16px;
                     display: block;
 
@@ -222,5 +223,58 @@
         }
 
 
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 280px) {
+    .RightSide {
+        margin-left: -10px;
+
+        .rigtSide__head {
+           
+
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 14px;
+                    margin-top: -50px;
+                    span {
+                        margin-left: 0px;
+                    }
+                }
+
+                .rightSide__map {
+                    font-size: 10px;
+
+                    span {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .rightSide__btn {
+                @include button;
+                width: 96px;
+                height: 32px;
+                font-size: 10px;
+                margin-top: 20px;
+                margin-left: -28px;
+            }
+        }
+
+        .rightSide__slider {
+            margin-top: 16px;
+            width: 100%;
+
+            .rightSide__info {
+                font-size: 10px;
+                margin: 16px 0 26px 0;
+            }
+        }
+
+        .rightSide__hotelProperties {
+            margin-bottom: 60px;
+        }
     }
 }

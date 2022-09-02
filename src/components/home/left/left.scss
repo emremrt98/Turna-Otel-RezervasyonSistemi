@@ -42,8 +42,6 @@
 }
 
 
-
-
 // Responsive Design for Tablet
 @media only screen and (max-width : 992px) and (min-width : 768px) {
     .LeftSide {
@@ -187,7 +185,7 @@
     .LeftSide {
 
         .leftSide__transportation {
-            width: 265%;
+            width: 270%;
             height: 60vh;
         }
 
@@ -211,5 +209,12 @@
             left: -6px;
         }
 
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 280px) {
+    .LeftSide {
+        display: none;
     }
 }
