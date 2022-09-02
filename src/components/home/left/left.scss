@@ -6,9 +6,7 @@
     .leftSide__mapIcon {
         @include button;
         display: none;
-
     }
-
 
     .leftSide__transportation {
         .leftSide__header {
@@ -44,13 +42,14 @@
 }
 
 // Responsive Design for Tablet
-
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) and (min-width : 768px) {
     .LeftSide {
         position: relative;
+        z-index: 100;
 
         .leftSide__mapIcon {
-            display: none;
+            z-index: 1000;
+            display: block;
             width: 50px;
             position: absolute;
             top: -40px;
@@ -63,28 +62,33 @@
 
 
         .leftSide__transportation {
-            display: none;
+            display: block;
+            position: absolute;
+            left: -800px;
+            transition: all .3s;
+            background-color: #fff;
+            width: 184%;
+            height: 50vh;
 
             .leftSide__header {
-                font-weight: 700;
-                font-size: 16px;
-                color: $text-color;
+                padding: 20px 0 0 0;
+                font-size: 24px;
             }
 
             .leftSide__article {
                 .leftSide__address {
-                    width: 80%;
-                    font-size: 14px;
-                    color: $text-secondary-color;
+                    width: 66%;
+                    font-size: 16px;
+                    
                 }
 
                 .leftSide__map {
-                    width: 305px;
-                    height: 190px;
+                    width: 400px;
+                    height: 285px;
                 }
 
                 .leftSide__btn {
-                    width: 305px;
+                    width: 400px;
                     @include button;
                     background-color: $button-secondary-color;
                     border: 1px solid $button-color;
@@ -93,6 +97,9 @@
                 }
             }
 
+        }
+        .leftSide__transportation2{
+            left: -5px;
         }
 
     }
@@ -105,9 +112,16 @@
         z-index: 100;
 
         .leftSide__mapIcon {
+            z-index: 1000;
             display: block;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            position: absolute;
+            top: -40px;
+            height: 50px;
+            border-radius: 6px;
+            -webkit-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 5px 5px -1px rgba(0, 0, 0, 0.75);
         }
 
         .leftSide__transportation {
@@ -116,13 +130,66 @@
             left: -800px;
             transition: all .3s;
             background-color: #fff;
-            width: 260%;
+            width: 258%;
+            height: 48vh;
+
+            .leftSide__header {
+                padding: 20px 0 0 0;
+                font-size: 18px;
+            }
+        }
+
+        .leftSide__transportation2 {
+            left: -5px;
+
+        }
+
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (min-width : 412px) and (max-width : 414px) {
+    .LeftSide {
+
+        .leftSide__transportation {
+            width: 246%;
             height: 45vh;
         }
 
         .leftSide__transportation2 {
-            left: 0;
+            left: -5px;
+        }
 
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 389px) {
+    .LeftSide {
+
+        .leftSide__transportation {
+            width: 265%;
+            height: 60vh;
+        }
+
+        .leftSide__transportation2 {
+            left: -5px;
+        }
+
+    }
+}
+
+// Responsive Design for Mobile
+@media only screen and (max-width : 361px) {
+    .LeftSide {
+
+        .leftSide__transportation {
+            width: 274%;
+            height: 54vh;
+        }
+
+        .leftSide__transportation2 {
+            left: -6px;
         }
 
     }
