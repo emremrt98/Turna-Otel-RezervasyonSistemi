@@ -110,6 +110,67 @@
     }
 }
 
+// Responsive Design for Tablet
+@media only screen and (max-width : 1280px) {
+    .room {
+        padding: 30% 0;
+        height: 275vh;
+        .room__general {
+            .room__gnr {
+                width: 70%;
+
+                .room__exit {
+                    font-size: 3rem;
+                    right: 1%;
+                    top: 1%;
+                }
+
+                .room__information {
+
+                    .room__header {
+                        font-size: 28px;
+                    }
+
+                    .room__header--info {
+                        font-size: 18px;
+                    }
+
+                    .room__advantage {
+                        font-size: 14px;
+                        span:nth-child(3) {
+                            .room__icon {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                    }
+
+                    .room__property {
+                        font-size: 16px;
+                        width: 96%;
+
+                        div {
+                            p {
+                                margin-top: -8px;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design for Tablet
+@media only screen and (max-width : 1024px) {
+    .room {
+       
+        height: 336vh;
+        
+    }
+}
 
 // Responsive Design for Tablet
 @media only screen and (max-width : 992px) {

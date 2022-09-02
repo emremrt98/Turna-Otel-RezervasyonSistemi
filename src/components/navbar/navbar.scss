@@ -64,7 +64,6 @@
 
 }
 
-
 // RESPONSIVE DESIGN for Tablet
 @media only screen and (max-width : 992px) {
     .header {
@@ -92,35 +91,18 @@
 }
 
 // RESPONSIVE DESIGN for Mobile
-
 @media only screen and (max-width : 767px) {
     .header {
-        .navbar--modf {
-            margin-top: -20px;
-        }
-
         .navbar {
-            margin-left: 0px;
-
             .nav__menu {
-                margin-left: 0px;
                 margin-top: -2px;
+                font-size: 14px;
             }
 
             .nav__menu2 {
-                margin-left: 10px;
+                
                 margin-top: -2px;
             }
-
-            .nav__menu--active {
-
-
-                &::after {
-                    width: 00%;
-
-                }
-            }
-
         }
 
     }
