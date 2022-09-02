@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# turna.com Otel Web Site Tasarım Taslağı
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sitenin Yayına Alındığı Platform 
+- Site düzenli olarak Github adresimde güncellenmiş olup Netlify ortamına build alınarak deploy edilmiştir. Canlı bakmak için [Link](https://macroturna.netlify.app/)
 
-## Available Scripts
+## Projede Kullanılan Araç ve Gereçler
+- Verilen Web sitenin tasarımı React.js kullanılarak yapılmıştır. [Link](https://tr.reactjs.org/)
+- Css tarafında Sass ve Bootstrap 5 kullanılmıştır. [Link1](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) [Link2](https://react-bootstrap.github.io/)
+- Projede bulunan iconlar React-Icons kütüphanesinden alınmıştır. [Link](https://react-icons.github.io/react-icons/)
+- Projede bulunan loader ekranı React-Spinners kütüphanesinden yararlanılarak yapılmıştır. [Link](https://www.davidhu.io/react-spinners/)
+- Proje komple React dökümantasyonlarında bahsedilen **Component** yapısına uygun bir biçimde kodlanarak gerek bir değişiklik yapılacağında gerek kodu okuyacak kişilere ciddi bir kolaylık sağlanmıştır.
+- Projede tüm Css kodları **BEM** yapısına etiket isimleri ise **Semantic** yapısına uygun olarak hazırlanmıştır.
 
-In the project directory, you can run:
+## Projede Bulunan Yapılar
+### Navbar
+- Navbar kısmında klasik menülere ek olarak bir adet dropdown menü bulunmaktadır. 
+- Bu süreç bootstrap kütüphanesi kullanılarak hızlıca halledilmiştir.
 
-### `npm start`
+### Body
+#### Sol Taraf
+- Site iki parçaya bölünmüştür. (1/3 Flex yapısı kullanılmıştır.)
+- Sitenin sol tarafında Google Maps tarafından alınan bir iFrame linkiyle harita siteye gömülmüştür. Ek olarak butona tıkladığınızda sitenin konumuna haritada erişebiliyorsunuz. [Link](https://www.google.com/maps)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Sağ Taraf
+- Sitede bulunan otelin resimlerini içeren bir slider mevcuttur. Bu aşama yine Bootstrap kullanılarak yapılmıştır.
+- Odalara ait görsel ve detayları içeren küçük kartlarımız mevcuttur. Burada odaların adından özelliklerine kadar bütün her şey bir dizi içerisinde objeler oluşturulup kartlara birer props olarak geçilmiştir. Böylelikle ileriye dönük bir kod arşivi sağlandığında kolaylıkla Database'den gelen verilen ekrana yansıtılabilecektir.
+- Odayı ayır butonuna tıklandığında yeni bir pencere açılarak odanın görsellerini bir slide yardımıyla görebiliyor ve hem oda hakkında detay bilgilere erişirken diğer bir yandan odayı kendinize ayırtabiliyorsunuz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Oda Penceresi
+- Odayı ayır butonuna tıkladıktan sonra açılan pencere bir **Component** içerisinde yapılarak tekrar kodlanabilirliği kolaylaştırmıştır.
+- Açılan pencere **useState** kullanılarak bir butona **onClick** eventi verilmiş olup ekrana yansıyıp yansımamayı kontrol etmektedir.
+- Ekranda bulunan Slider'ın üstündeki X işareti ile ekranı kapatabilirsiniz.
 
-### `npm test`
+### Responsive Design 
+- Proje tablet ve mobil uyumlu olarak en ince ayrıntısına kadar yeniden tasarlanmıştır.
+- Ekranın üst kısmında bulunan **Map** simgesine tıklayarak harita görünümüne geçebilirsiniz.
+- Kullanıcı arayüzünü (UX) göz önünde bulundurarak açılan map penceresini tekrar butona basarak kapatmak istemeyenler için ekranın herhangi bir noktasına tıklayarak kapatabilmeleri sağlanmıştır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Proje Başlangıç Tarihi : 29.08.2022**
+**Proje Bitiş Tarihi : 02.09.2022**
+**Hazırlayan : Emre MERT**
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
