@@ -41,7 +41,6 @@
 
 }
 
-
 // Responsive Design for Tablet
 @media only screen and (max-width : 992px) and (min-width : 768px) {
     .LeftSide {
@@ -161,6 +160,17 @@
 
         }
 
+    }
+}
+
+// Responsive Design for Surface DUO
+@media only screen and (max-width : 600px) and (min-width : 520px) {
+    .LeftSide {
+        .leftSide__transportation {
+            width: 194%;
+            height: 58vh;
+            padding: 5px 10px;
+        }
     }
 }
 

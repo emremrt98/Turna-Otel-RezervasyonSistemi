@@ -154,6 +154,49 @@
     }
 }
 
+// Responsive Design for Surface DUO
+@media only screen and (max-width : 600px) and (min-width : 520px) {
+    .RightSide {
+        margin-left: -170px;
+
+        .rigtSide__head {
+           
+
+            .rigtSide__heading {
+
+                .rigtSide__header {
+                    font-size: 22px;
+
+                }
+
+                .rightSide__map {
+                    font-size: 12px;
+
+                    
+                }
+            }
+
+            .rightSide__btn {
+                @include button;
+                width: 126px;
+                height: 42px;
+                font-size: 12px;
+                margin-left: 20px;
+            }
+        }
+
+        .rightSide__slider {
+            margin-top: 16px;
+            width: 100%;
+
+            .rightSide__info {
+                font-size: 12px;
+                margin: 16px 0 26px 0;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 414px) {
     .RightSide {
 
