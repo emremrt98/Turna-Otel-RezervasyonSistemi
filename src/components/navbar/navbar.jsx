@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assets/navbar/logo.png';
 import TrFlag from '../../assets/navbar/tr.png';
+import TrFlag2 from '../../assets/navbar/tr2.png';
 import { TbCurrencyLira } from 'react-icons/tb';
 import './navbar.scss';
 
@@ -22,8 +23,10 @@ function navbar() {
                         <Nav.Link className='nav__menu nav__menu--active' href="#link">Otel Rezervasyon</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto navbar navbar--modf">
-                        <Nav.Link className='nav__menu2' href="#link"><img className='nav__img' src={TrFlag} alt="tr-flag" /></Nav.Link>
-                        <Nav.Link className='nav__menu2' href="#link"><TbCurrencyLira className='nav__img nav__img--icon' /></Nav.Link>
+                        <div className='navbar__helper'>
+                            <Nav.Link className='nav__menu2' href="#link"><img className='nav__img' src={TrFlag2} alt="tr-flag" /></Nav.Link>
+                            <Nav.Link className='nav__menu2' href="#link"><TbCurrencyLira className='nav__img nav__img--icon' /></Nav.Link>
+                        </div>
                         <NavDropdown className='border-radius-5 nav__menu' title="Yardım" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Rezervasyon Kontrol</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Sıkça Sorulan Sorular</NavDropdown.Item>

@@ -25,7 +25,6 @@ function LeftSide() {
                 </article>
             </article>
 
-
         </section >
 
 
