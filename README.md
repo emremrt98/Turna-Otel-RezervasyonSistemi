@@ -36,7 +36,13 @@
 - Ekranın üst kısmında bulunan **Map** simgesine tıklayarak harita görünümüne geçebilirsiniz.
 - Kullanıcı arayüzünü (UX) göz önünde bulundurarak açılan map penceresini tekrar butona basarak kapatmak istemeyenler için ekranın herhangi bir noktasına tıklayarak kapatabilmeleri sağlanmıştır.
 
-**Proje Başlangıç Tarihi : 29.08.2022**
-**Proje Bitiş Tarihi : 02.09.2022**
-**Hazırlayan : Emre MERT**
+**Proje Başlangıç Tarihi : 29.08.2022**  **Proje Bitiş Tarihi : 02.09.2022**  **Hazırlayan : Emre MERT**  **Tüm Hakları Saklıdır.**
 
+
+## Projeyi İndirme
+- Projeyi indirip Visual Studio Code ile açtıktan sonra terminal ekranınıza giriniz.
+- Terminal ekranında **cd** kullanakk projenin kurulu olduğu dizine giriniz
+- Dizindeyken terminal ekranına **npm install** yazarak proje için gerekli paket dosyalarını indiriniz.
+- Dosyalar indikten sonra terminal ekranına **npm start** yazarak projeyi tarayıcınızda açınız. (http://localhost:3000/)
+
+##### Proje faydalı olduysa forklamayı ve star atmayı unutmayınız
