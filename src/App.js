@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App ">
+    <section className="App ">
       {
         loader ?
           <div className='loader'><ClipLoader color='#FF3200' loading={loader} size={100} /></div>
@@ -32,7 +32,7 @@ function App() {
             }
           </div>
       }
-    </div>
+    </section>
   );
 }
 

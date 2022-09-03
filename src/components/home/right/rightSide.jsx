@@ -45,30 +45,30 @@ function RightSide({ show, setShow }) {
     ]
 
     return (
-        <section className='RightSide'>
-            <div className='rigtSide__head'>
+        <main className='RightSide'>
+            <section className='rigtSide__head'>
                 <article className='rigtSide__heading'>
                     <h4 className='rigtSide__header'>Rixos Downtown Hotel (9.0)<span><AiFillStar className='rigtSide__icon' /><AiFillStar className='rigtSide__icon' /><AiFillStar className='rigtSide__icon' /></span></h4>
                     <p className='rightSide__map'><span><FaMapMarker /></span> Antalya, Merkez</p>
                 </article>
                 <button className='rightSide__btn'>Rezervasyon Yap</button>
-            </div>
+            </section>
             <figure className='rightSide__slider'>
                 <Carousel img1={Hotel1} img2={Hotel2} img3={Hotel3} />
                 <p className='rightSide__info'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, illo exercitationem doloribus mollitia dicta ipsa provident, numquam officiis harum quas expedita, incidunt esse voluptates sequi iure sapiente voluptatibus molestiae ad minima eos tempore molestias aspernatur dolor recusandae! </p>
             </figure>
-            <article className='rightSide__card'>
+            <section className='rightSide__card'>
                 <HotelCard hotelRoomInfo={hotelRoomInfo[0]} show={show} setShow={setShow} />
                 <br />
                 <HotelCard hotelRoomInfo={hotelRoomInfo[1]} show={show} setShow={setShow} />
-            </article>
+            </section>
             <hr className='hr' />
-            <article className='rightSide__hotelProperties'>
+            <section className='rightSide__hotelProperties'>
                 <HotelProperties hotelPropertiesInfo={hotelPropertiesInfo[0]} />
                 <hr className='hr' />
                 <HotelProperties hotelPropertiesInfo={hotelPropertiesInfo[1]} />
-            </article>
-        </section>
+            </section>
+        </main>
     )
 }
 

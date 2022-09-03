@@ -7,7 +7,7 @@ function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], 
     return (
         <section className='hotelCard'>
             <figure className='hotelCard__img'><img src={img} alt="room1" /></figure>
-            <article className='hotelCard__generalInfo'>
+            <section className='hotelCard__generalInfo'>
                 <div className='hotelCard__Info'>
                     <h5 className='hotelCard__roomType'>{name}</h5>
                     <div className='hotelCard__advantage'>
@@ -38,7 +38,7 @@ function HotelCard({ hotelRoomInfo: { name, img, advantage: [adv1, adv2, adv3], 
                     </div>
                     <div className='hotelCard__bookBtn'><button onClick={() => setShow(!show)} type='button'>Odayı Ayır<FaArrowRight className='hotelCard__icon' /></button></div>
                 </div>
-            </article>
+            </section>
         </section>
     )
 }
